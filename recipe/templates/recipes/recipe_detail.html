@@ -1,0 +1,15 @@
+<!-- recipes/recipe_detail.html -->
+{% extends 'base.html' %}
+
+{% block content %}
+  <center>
+    <div class="w-75">
+      <h1 class="mt-5 mb-4">{{ recipe.name }}</h1>
+      <h3>Ingredients</h3>
+      <p>{{ recipe.ingredients }}</p>
+      <h3>Instructions</h3>
+      <p>{{ recipe.instructions }}</p>
+      <p class="text-muted">Created: {{ recipe.date_created }}</p>
+    </div>
+  </center>
+{% endblock %}
